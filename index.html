@@ -18,13 +18,34 @@
 
     <script type="text/javascript" src="js/qrscan.js"></script>
     <script type="text/javascript" src="js/rclSocket.js"></script>
+
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+        body {
+            /* Margin bottom by footer height */
+            margin-bottom: 20px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            /* Set the fixed height of the footer here */
+            height: 30px;
+            line-height: 10px; /* Vertically center the text there */
+        }
+
+    </style>
 </head>
 
 <body class="bg-inverse">
 
-    <nav class="navbar ">
+    <nav class="navbar navbar-toggleable-md ">
 
         <a class="navbar-brand" href="#">Ripple Submit</a>
+
     </nav>
 
     <div class="container" style="margin-top: 1em">
@@ -71,6 +92,22 @@
 
     <input type="file" id="id_FileInput" accept="image/*"
            style="z-index: -30; visibility: hidden; position: absolute; right: 0; top: 0;" >
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-6">
+                    <p class="text-left">
+                        <a href="https://github.com/segrax/xrp-wallet" target="_blank">xrp wallet</a>
+                    </p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </footer>
 
 <script type="text/javascript">
 
