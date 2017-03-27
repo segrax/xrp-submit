@@ -18,7 +18,7 @@ QRScanner.init = function (pCallback) {
     QRScanner.image.onload = function () {
 
         // Resize image
-        var Ratio = (640 + 480) / (QRScanner.image.width + QRScanner.image.height);
+        var Ratio = (960 + 720) / (QRScanner.image.width + QRScanner.image.height);
         QRScanner.canvas.width = Math.ceil(QRScanner.image.width * Ratio);
         QRScanner.canvas.height = Math.ceil(QRScanner.image.height * Ratio);
 
